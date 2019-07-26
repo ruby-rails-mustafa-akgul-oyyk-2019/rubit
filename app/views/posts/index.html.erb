@@ -6,3 +6,19 @@
 
 <h1>Posts#index</h1>
 <p>Find me in app/views/posts/index.html.erb</p>
+
+<h2>List of short posts</h2>
+<ul>
+  <%= render partial: 'post',
+             collection: @posts,
+             layout: 'list_layout',
+             locals: { short: true } %>
+</ul>
+<h2>List of normal posts</h2>
+
+<div>
+  <%= render partial: 'post',
+             collection: @posts,
+             layout: 'paragraph_layout',
+             spacer_template: 'spacer'%>
+</div>
