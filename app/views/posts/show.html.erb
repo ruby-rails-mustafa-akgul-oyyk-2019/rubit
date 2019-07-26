@@ -1,5 +1,7 @@
 <% content_for :action_name,
-               render('current_action', parent_page: 'show') %>
+               render('layouts/shared/current_action',
+                      parent_page: 'show')
+%>
 <%= content_for :page_title, 'Posts details' %>
 
 <h1>Posts#show</h1>

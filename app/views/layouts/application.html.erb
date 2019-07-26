@@ -3,7 +3,7 @@
   <head>
     <title>
       Rubit -
-      <%= content_for?(:page_title) ? yield :page_title : "Hoşgeldiniz" %>
+      <%= content_for?(:page_title) ? yield(:page_title) : "Hoşgeldiniz" %>
     </title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
