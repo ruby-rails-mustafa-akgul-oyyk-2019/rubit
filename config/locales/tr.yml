@@ -29,6 +29,6 @@
 # To learn more, please read the Rails Internationalization guide
 # available at https://guides.rubyonrails.org/i18n.html.
 
-en:
-  language: 'Current language is "%{lang}"'
-  hello: "Hello world"
+tr:
+  language: 'Şu anki site dili "%{lang} dir"'
+  hello: "Merhaba dünya"

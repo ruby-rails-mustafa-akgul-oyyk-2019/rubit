@@ -13,8 +13,13 @@
   </head>
 
   <body>
-    <h1>Rubit Example</h1>
-    <p><%= notice %></p>e
+    <h1>Rubit Example - Dil: <%= t('language', lang: I18n.locale) %> </h1>
+
+    <%=link_to 'TR', root_path(locale: :tr) %>
+    <%=link_to 'EN', root_path(locale: :en) %>
+
+    <p><%= notice %></p>
+    <strong>Sayaç</strong> <%= cookies[:page_counter] %><br/>
     <%= yield :action_name %>
     <%= yield %>
   </body>

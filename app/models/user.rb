@@ -7,4 +7,8 @@ class User < ApplicationRecord
 
   has_many :likes_for_published_posts, through: :posts, source: :likes
   has_many :comments_for_published_posts, through: :posts, source: :comments
+
+  def user_name
+    full_name
+  end
 end
